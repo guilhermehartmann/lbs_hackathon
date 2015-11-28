@@ -1,5 +1,5 @@
 upstream django {
-    server unix:///home/guilherme/hartmann.sock; 
+    server unix:///home/hackathon/hartmann.sock; 
 }
 
 server {

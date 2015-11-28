@@ -12,7 +12,7 @@ server {
   client_header_buffer_size 64k;
 
   location / {
-    proxy_pass http://guilherme-local-machine-1/;
+    proxy_pass http://hackathon-local-machine-1/;
   }
 
 }
