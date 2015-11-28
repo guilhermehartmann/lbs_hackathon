@@ -1,0 +1,19 @@
+
+server {
+  listen 80 default;
+  server_name blog.web;
+
+  access_log /mnt/access.log;
+  error_log /mnt/error.log;
+  root /mnt/www;
+  index index.php index.html;
+  client_max_body_size    10m;
+  client_body_buffer_size 128k;
+  client_header_buffer_size 64k;
+
+  location / {
+    proxy_pass http://guilherme-local-machine-4/;
+  }
+
+}
+
